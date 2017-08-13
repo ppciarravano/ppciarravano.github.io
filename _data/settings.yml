@@ -1,0 +1,31 @@
+title:  'Pier Paolo Ciarravano :: Larmor'
+tagline:  Senior Software Engineer
+author:
+  name: 'Pier Paolo Ciarravano'
+  twitter:  larmorjazz
+
+# Change to true for Disqus comments
+disqus:
+  comments: true
+  disqus_shortname: 'https-lenpaul-github-io-lagrange'
+
+google-ID: 'UA-2541329-1'
+
+menu:
+- {name: 'About', url: 'about.html'}
+- {name: 'Blog', url: 'blog.html'}
+- {name: 'Projects', url: 'projects.html'}
+- {name: 'Portfolio', url: 'http://www.larmor.com/portfolio'}
+- {name: 'Contact', url: 'contact.html'}
+
+social:
+- {icon: 'linkedin-square', link: 'http://uk.linkedin.com/in/pierpaolociarravano/en'}
+- {icon: 'twitter', link: 'http://twitter.com/larmorjazz'}
+- {icon: 'vimeo', link: 'http://vimeo.com/larmor'}
+- {icon: 'github', link: 'https://github.com/ppciarravano'}
+- {icon: 'youtube', link: 'http://www.youtube.com/larmor'}
+- {icon: 'facebook-square', link: 'http://www.facebook.com/larmor'}
+- {icon: 'google-plus', link: 'http://www.google.com/+larmor'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+

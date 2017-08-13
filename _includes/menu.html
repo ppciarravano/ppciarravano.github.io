@@ -1,0 +1,19 @@
+<div class="menu">
+  <nav class="menu-content">
+    {% for item in site.data.settings.menu %}
+      {% if item.name == "Portfolio" %}
+        <a href="{{ item.url }}" target="_blank">{{ item.name }}</a>
+      {% else %}
+        <a href="{{ site.github.url }}/menu/{{ item.url }}">{{ item.name }}</a>
+      {% endif %}
+    {% endfor %}
+    <a href="http://uk.linkedin.com/in/pierpaolociarravano/en" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+  </nav>
+  <!--
+  <nav class="social-icons">
+    {% for item in site.data.settings.social %}
+      <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+    {% endfor %}
+  </nav>
+  -->
+</div>
