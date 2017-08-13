@@ -1,0 +1,232 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Pier Paolo Ciarravano's personal projects</title>
+<link href="./stylesheet.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	<!--
+	  body {
+		background-color: #fcf7f1;
+	  }
+	  a:link {
+		text-decoration: none;
+		color: 5b1e05;
+	  }
+	  a:visited {
+		text-decoration: none;
+		color: c65634;
+	  }
+	  a:hover {
+		text-decoration: underline;
+	  }
+	  a:active {
+		text-decoration: none;
+	  }
+	  .style1 {font-size: 10px}
+	-->
+</style>
+</head>
+<body onload="load();">
+<br>
+<table border="0" align="left" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="toplinks"><h1>Pier Paolo Ciarravano's personal projects</h1>
+<a href="http://www.larmor.com/menu/contact.html">CONTACT ME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://uk.linkedin.com/in/pierpaolociarravano/en" target="_blank"><img src="http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Pier Paolo Ciarravano's profile on LinkedIn"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--<a href="http://www.larmor.com/portal/">old website</a>-->
+</td></tr>
+<tr><td><hr></td></tr>
+</tbody></table><br><br><br>
+<!-- fcf7f1  and f9f0e4 -->
+
+<table><tbody>
+
+<tr><td bgcolor="fcf7f1" align="left" valign="top">
+  <b><a name="larmorsound" href="https://vimeo.com/217962694">Houdini R&D: POP VOP CVEX in DOP and CHOP Morphing</a></b><br>
+  <i>May 2017</i><br><br>
+
+POP VOP dynamics node with code in CVEX has been used to update the force and the torque for each cube in the Bullet Solver DOP.<br>
+A CHOP network has been used for the audio driven animation.<br>
+Rendered with OpenGL render node.<br><br>
+
+<iframe src="https://player.vimeo.com/video/217962694" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/217962694">Houdini R&D: POP VOP CVEX in DOP and CHOP Morphing </a> from <a href="https://vimeo.com/larmor">Pier Paolo Ciarravano</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+</td></tr>
+<tr><td align="cenger" valign="center"><br><hr><br></td></tr>
+
+
+<tr><td bgcolor="fcf7f1" align="left" valign="top">
+  <b><a name="larmorsound" href="https://github.com/ppciarravano/larmorsound">LarmorSound v.1.0 Beta extension for Fabric Engine</a></b><br>
+  <i>Oct.-Nov. 2016</i><br><br>
+The extension for Fabric Engine 2.3 is in C++ for Windows and Linux. It extracts the audio from many media file types and it can play the audio and produce the numeric sound spectrum from the FFT sample analysis.
+It is integrated with examples for Fabric Canvas, KL and Maya and released under <a href="http://www.gnu.org/licenses/gpl.html">GNU/GPL License.</a><br><br>
+
+Features:<br><br>
+<ul>
+    <li>Extracts audio from all media file types: wav, mp3, mp4, mkv, mts, etc.</li>
+    <li>Extracts all audio channels: mono, stereo, 5.1, etc.</li>
+    <li>Spectrum output in time per each channel</li>
+    <li>Audio energy in time per each channel</li>
+    <li>Numeric samples output per channel</li>
+    <li>Audio playback reproduction: Fabric Canvas play and stop buttons integrated using internal frame “heartbeat” sync</li>
+    <li>Fabric Canvas, Maya and KL demo samples provided</li>
+    <li>Windows and Linux versions (Mac OS X version available on January 2017)</li>
+</ul>
+<a href="http://forums.fabricengine.com/discussion/793/from-pierpaulo-ciarravano-larmorsound" target="_blank">Fabric Engine Forum</a><br>
+<a href="https://github.com/ppciarravano/larmorsound">GitHub project (C++ Source code is provided on request)</a><br><br>
+
+<iframe src="https://player.vimeo.com/video/190653588" width="640" height="512" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/190653588">LarmorSound v.1.0 Beta for Fabric Engine</a> from <a href="https://vimeo.com/larmor">Pier Paolo Ciarravano</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<iframe src="https://player.vimeo.com/video/192639511" width="640" height="482" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/192639511">LarmorSound v.1.0 Beta for Fabric Engine: Windows demo and Maya integration</a> from <a href="https://vimeo.com/larmor">Pier Paolo Ciarravano</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+</td></tr>
+<tr><td align="cenger" valign="center"><br><hr><br></td></tr>
+
+
+<tr><td bgcolor="fcf7f1" align="left" valign="top">
+  <b><a name="larmorfluid" href="https://github.com/ppciarravano/larmorfluid-yapfs">PIC/FLIP fluid simulation solver using OpenVDB and NVIDIA CUDA</a></b><br>
+  <i>From Dec. 2016</i><br><br>
+This project is another classical implementation of PIC/FLIP fluid simulation solver based on algorithms described in the book “Fluid Simulation for Computer Graphics” by Robert Bridson, but with some particular future goals:<br><br>
+<ul>
+    <li>Use of <a href="http://www.openvdb.org/" target="_blank">OpenVDB</a> and future implementation using Dneg's <a href="https://github.com/dneg/openvdb_points_dev" target="_blank">OpenVDBPoints</a> lib</li>
+    <li>NVIDIA CUDA 8 and cuSPARSE API</li>
+    <li>Multithread using TBB</li>
+    <li>Handling of large grid and large dataset</li>
+    <li>Use of <a href="https://developer.nvidia.com/gvdb" target="_blank">NVIDIA GVDB Sparse Volumes</a></li>
+    <li>Export particles with <a href="https://www.disneyanimation.com/technology/partio.html" target="_blank">Disney Partio</a> or other formats</li>
+    <li>Import from <a href="http://www.alembic.io/" target="_blank">Alembic</a></li>
+    <li>Unit test using CppUnit</li>
+    <li>Availability of AWS EC2 AMI image already configured to run the solver easily on a <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/accelerated-computing-instances.html" target="_blank">AWS EC2 P2 Istances</a></li>
+</ul>
+The project is still in development and debugging.<br>
+<a href="https://github.com/ppciarravano/larmorfluid-yapfs">GitHub project</a><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jkg3ykTz2xo?rel=0" frameborder="0" allowfullscreen></iframe><br>
+<a href="https://www.youtube.com/watch?v=jkg3ykTz2xo" target="_blank">Youtube video link: DEBUG artifacts and issues PIC/FLIP LarmorFluid</a><br>
+</td></tr>
+<tr><td align="cenger" valign="center"><br><hr><br></td></tr>
+
+
+<tr><td bgcolor="fcf7f1" align="left" valign="top">
+  <b><a name="larmor-physx" href="https://github.com/ppciarravano/larmor-physx">Dynamic Voronoi shatter for non-convex triangle meshes<br>with BulletPhysics dynamic shatter on objects collision and RenderMan RIB generation</a></b><br>
+  <i>2013-2016</i><br><br>
+<ul>
+	<li>The project implements a Voronoi shatter of non-convex triangle meshes using C++ and CGAL</li>
+	<li><b>The project is used in my <a href="http://www.larmor.com/LarmorVoronoiMayaPlugin/">LarmorVoronoi Shatter Plugin for Maya 2012/2013/2014 for Windows, Mac OS X and Linux</a> (see below)</b></li>
+	<li>The shatter uses the Voronoi brute force algorithm implemented in multithreading</li>
+	<li>The cut faces are rebuilt using the Constrained Delaunay triangulation</li>
+	<li>The triangle meshes can contain multiple holes and cavities with nested objects</li>
+	<li>The algorithm can separate the disjointed surfaces</li>
+	<li>The C++ API can calculate the mesh's volume and the inertia tensor using the volume 3D Triangulation</li>
+	<li>The algorithm has been applied to BulletPhysics to shatter the objects on the collision points</li>
+	<li>I have created: an API for the dynamic objects and scenes description, an OpenGL scene viewer and a RenderMan RIB scene generator with motion blur</li>
+	<li><a href="http://youtu.be/2iFlHiCOn-Q?t=1m48s">The RenderMan RIB scenes have been rendered using 3Delight with motion blur</a></li>
+	<li>BulletPhysics <a href="https://github.com/ppciarravano/larmor-physx/tree/master/BulletPhysics_patches">btGImpactCollisionAlgorithm class</a> has been modified to handle the collisions for non-convex triangle meshes</li>
+	<li>The project uses Boost C++ API (Containers, Threads and Serialization) and Intel Threading Building Blocks (TBB)</li>
+</ul>
+The <a href="https://github.com/ppciarravano/larmor-physx">Larmor-Physx project</a> is Free Software released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU/GPL License</a><br>
+  <a href="https://github.com/ppciarravano/larmor-physx">GitHub project</a><br><br>
+  <iframe width="853" height="480" src="http://www.youtube.com/embed/2iFlHiCOn-Q" frameborder="0" allowfullscreen></iframe><br>
+  <a href="http://youtu.be/14mil0tEIac" target="_blank">Youtube video link</a><br><br>
+  <iframe width="853" height="480" src="http://www.youtube.com/embed/-zdFiocwIpQ" frameborder="0" allowfullscreen></iframe><br>
+  <a href="http://youtu.be/2iFlHiCOn-Q" target="_blank">Youtube video link</a><br><br>
+  <iframe width="853" height="480" src="http://www.youtube.com/embed/14mil0tEIac" frameborder="0" allowfullscreen></iframe><br>
+  <a href="http://youtu.be/-zdFiocwIpQ" target="_blank">Youtube video link</a><br><br>
+  <iframe width="853" height="480" src="http://www.youtube.com/embed/q-NO419qAWc" frameborder="0" allowfullscreen></iframe><br>
+  <a href="http://youtu.be/q-NO419qAWc" target="_blank">Youtube video link</a><br><br>
+  
+  <a href="frame_00056.jpg" target="_blank"><img src="frame_00056_resize.jpg" width="390" height="219" border="0" alt=""></a>&nbsp;<a href="frame_00110.jpg" target="_blank"><img src="frame_00110_resize.jpg" width="390" height="219" border="0" alt=""><br>
+  
+</td></tr>
+<tr><td align="cenger" valign="center"><br><hr><br></td></tr>
+
+
+<tr><td bgcolor="fcf7f1" align="left" valign="top">
+  <b><a name="larmorvoronoimaya" href="http://www.larmor.com/LarmorVoronoiMayaPlugin/">LarmorVoronoi Shatter Plugin for Maya 2012/2013/2014 for Windows, Mac OS X and Linux</a></b><br>
+  <i>2013-2016</i><br><br>
+LarmorVoronoi is a Voronoi Shatter Plug-in in C++ for Maya 2012/2013/2014 for Windows, Mac OS X and Linux, that uses the <a href="https://github.com/ppciarravano/larmor-physx">Larmor-Physx Voronoi Shatter API</a>.<br><br>
+The <a href="https://github.com/ppciarravano/larmor-physx/tree/master/LarmorVoronoi_MayaPlugIn">project</a> is Free Software released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU/GPL License</a> and it is part of the <a href="https://github.com/ppciarravano/larmor-physx">Larmor-Physx Voronoi Shatter API</a>.<br><br>
+<ul>
+	<li>The Plugin implements a Voronoi shatter of non-convex triangle meshes (Maya polygon surfaces) using C++ and <a href="http://www.cgal.org/">CGAL</a></li>
+	<li>The shatter uses the Voronoi brute force algorithm implemented in multithreading</li>
+	<li>The cut faces can be rebuilt using the Constrained Delaunay triangulation</li>
+	<li>The triangle meshes can contain multiple holes and cavities with nested objects</li>
+	<li>MEL GUI window accessible from a new Maya menu in order to use the plug-in easily</li>
+	<li>The algorithm can separate the disjointed surfaces</li>
+	<li>The Plugin can calculate the mesh's volume and the inertia tensor using the volume 3D Triangulation</li>
+</ul>
+<a href="http://www.larmor.com/LarmorVoronoiMayaPlugin/">Documentation page</a><br>
+<a href="https://github.com/ppciarravano/larmor-physx/tree/master/LarmorVoronoi_MayaPlugIn">GitHub project</a><br><br>
+<a href="https://github.com/ppciarravano/larmor-physx/tree/master/LarmorVoronoi_MayaPlugIn/builds/macosx" target="_blank">Plug-in Binary version 1.1.1Beta-Build78 for Maya 2012/2013/2014 Mac OS X.</a><br>
+<a href="https://github.com/ppciarravano/larmor-physx/tree/master/LarmorVoronoi_MayaPlugIn/builds/linux" target="_blank">Plug-in Binary version 1.1.1Beta-Build79 for Maya 2012/2013/2014 Linux (x86_64).</a><br>
+<a href="https://github.com/ppciarravano/larmor-physx/tree/master/LarmorVoronoi_MayaPlugIn/builds/windows">Plug-in Binary version 1.1.0Beta-Build77 for Maya 2012/2013/2014 Windows (64 bit).</a><br>
+For last news, documentation updates and video tutorial visit the <a href="https://github.com/ppciarravano/larmor-physx/tree/master/LarmorVoronoi_MayaPlugIn">project page</a>.<br>
+<a href="http://www.creativecrash.com/maya/plugin/larmorvoronoi-plugin-for-maya-2012-2013-2014">CreativeCrash.com plug-in page</a>.<br><br>
+<iframe width="800" height="450" src="//www.youtube.com/embed/WF31Q60SKTU" frameborder="0" allowfullscreen></iframe><br>
+<a href="http://youtu.be/WF31Q60SKTU" target="_blank">Youtube video link</a><br><br>
+<a href="LarmorVoronoi_Maya2014_screenshot4.jpg" target="_blank"><img src="LarmorVoronoi_Maya2014_screenshot4_resize.jpg" width="800" height="478" border="0" alt=""></a><br><br>
+<a href="Screenshot_mac1.jpg" target="_blank"><img src="Screenshot_mac1_resize400.jpg" width="400" height="320" border="0" alt=""></a>&nbsp;<a href="Screenshot_lnx1.jpg" target="_blank"><img src="Screenshot_lnx1_resize400.jpg" width="400" height="240" border="0" alt="" align="top"></a><br><br>
+<a href="LarmorVoronoi_Maya2014_screenshot.jpg" target="_blank"><img src="LarmorVoronoi_Maya2014_screenshot_resize.jpg" width="800" height="480" border="0" alt=""></a><br>
+</td></tr>
+<tr><td align="cenger" valign="center"><br><hr><br></td></tr>
+
+
+<tr><td bgcolor="fcf7f1" align="left" valign="top">
+  <b><a name="opencv" href="http://www.larmor.com/portal/index.php?option=com_content&task=view&id=27&Itemid=60">Java OpenCV MatchTemplate</a></b><br>
+  <i>2008</i><br><br>
+It's a Java native library that wraps the OpenCV (the Open Source Computer Vision Library) function cvMatchTemplate and implements methods for utilities result visualization. It permits an efficient images template matching using Normalized Cross-Correlation (NCC - Fast Normalized Cross-Correlation) and others algorithms. <br><br>
+  <a href="http://www.larmor.com/portal/index.php?option=com_content&task=view&id=27&Itemid=60">Project's page</a><br>
+  <a href="http://sourceforge.net/projects/jmatchtemplate/">SourceForge source code repository</a><br><br>
+  <iframe width="480" height="360" src="//www.youtube.com/embed/TrAM8_Fw3yQ" frameborder="0" allowfullscreen></iframe><br>
+  <a href="http://www.youtube.com/watch?v=TrAM8_Fw3yQ" target="_blank">Video demo</a><br>
+</td></tr>
+<tr><td align="cenger" valign="center"><br><hr><br></td></tr>
+
+
+<tr><td bgcolor="fcf7f1" align="left" valign="top">
+  <b><a name="algo-explorer" href="https://github.com/ppciarravano/algo-explorer">AlgoExplorer</a></b><br>
+  <i>2010</i><br><br>
+AlgoExplorer is a dynamic data structures viewer for Java. It permits the visualization of the data structures of a Java program and to see how objects, handled by the algorithms, interact with each other and how they are related and linked. <br><br>
+  <a href="https://github.com/ppciarravano/algo-explorer">GitHub project</a><br>
+  <a href="./doc/PierPaoloCiarravano_FinalRelationDegree.pdf">Final Relation Degree (Italian)</a><br>
+  <a href="./doc/DRAFT_AlgoExplorer_techreport.pdf">Technical report - DRAFT LaTeX (English)</a><br>
+  <a href="./doc/AlgoExplorer_slides.pdf">Pdf slides (Italian)</a><br>
+  <a href="http://www.larmor.com/algoexplorertest/AlgoExplorerViewer.html">Flex AlgoExplorer viewer</a><br><br>
+  <iframe width="480" height="360" src="//www.youtube.com/embed/53Ps7uoSW6s" frameborder="0" allowfullscreen></iframe><br>
+  <a href="http://youtu.be/53Ps7uoSW6s?t=6s" target="_blank">Video demo 2010</a><br>
+</td></tr>
+<tr><td align="cenger" valign="center"><br><hr><br></td></tr>
+
+
+<tr><td bgcolor="fcf7f1" align="left" valign="top">
+  <b><a name="remote-guard" href="https://github.com/ppciarravano/remote-guard">RemoteGuard</a></b><br>
+  <i>2010</i><br><br>
+RemoteGuard is a system for remote video and audio surveillance in Java. The system consists of a server and remote clients that deal with acquisition and playback of audio/video.<br><br>
+  <a href="https://github.com/ppciarravano/remote-guard">GitHub project</a><br>
+  <a href="./doc/RemoteGuard_slides.pdf">Pdf slides (Italian)</a><br>
+  <a href="http://youtu.be/53Ps7uoSW6s?t=2m19s" target="_blank">Video demo</a><br>
+</td></tr>
+<tr><td align="cenger" valign="center"><br><hr><br></td></tr>
+
+
+<tr><td bgcolor="fcf7f1" align="left" valign="top">
+  <b><a href="./doc/openfoam_cluster_howto.pdf">How build a Fedora HPC cluster running OpenFoam in parallel, using Torque/PBS, OpenMPI, Host-based authentication and NFS</a></b><br>
+  <i>2010</i><br><br>
+Italian manual that describes how build a Fedora HPC cluster.<br><br>
+  <a href="./doc/openfoam_cluster_howto.pdf">Pdf manual (Italian)</a><br>
+</td></tr>
+<tr><td align="cenger" valign="center"><br><hr><br></td></tr>
+
+
+</tbody></table>
+
+<br>
+Page last updated: May 2017<br>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2541329-1";
+urchinTracker();
+</script>
+
+</body></html>
