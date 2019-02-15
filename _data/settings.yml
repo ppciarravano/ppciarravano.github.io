@@ -24,8 +24,6 @@ social:
 - {icon: 'vimeo', link: 'http://vimeo.com/larmor'}
 - {icon: 'github', link: 'https://github.com/ppciarravano'}
 - {icon: 'youtube', link: 'http://www.youtube.com/larmor'}
-- {icon: 'facebook-square', link: 'http://www.facebook.com/larmor'}
-- {icon: 'google-plus', link: 'http://www.google.com/+larmor'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 
