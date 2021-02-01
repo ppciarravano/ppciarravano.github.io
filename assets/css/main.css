@@ -362,6 +362,19 @@ pre {
 	color: #0073a4;
 }
 
+.fa-imdb {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+}
+
+.fa-imdb:hover {
+	color: #dac900;
+}
+
 .fa-facebook {
   padding: 5px;
 	-o-transition:.5s;
