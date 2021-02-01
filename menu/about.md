@@ -6,3 +6,4 @@ I am a Lead Software Engineer at [MPC Film](https://www.mpcfilm.com/) [Technicol
 
 Please visit my [LinkedIn](http://uk.linkedin.com/in/pierpaolociarravano/en) profile to read about my professional experiences.
 
+[IMDb Credits](https://www.imdb.com/name/nm12271878/).
