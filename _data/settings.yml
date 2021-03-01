@@ -15,7 +15,7 @@ menu:
 - {name: 'About', url: 'about.html'}
 - {name: 'Blog', url: 'blog.html'}
 - {name: 'Projects', url: 'projects.html'}
-- {name: 'Portfolio', url: 'http://www.larmor.com/portfolio'}
+- {name: 'Portfolio', url: 'https://www.larmor.com/portfolio'}
 - {name: 'Contact', url: 'contact.html'}
 
 social:
