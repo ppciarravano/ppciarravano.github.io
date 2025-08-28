@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Auto TeamViewer download client for MacOS</title>
+</head>
+<body>
+  <script>
+    window.onload = function() {
+      const fileUrl = "https://download.teamviewer.com/download/TeamViewerQS.dmg";
+      const a = document.createElement("a");
+      a.href = fileUrl;
+      a.download = "";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+</body>
+</html>
